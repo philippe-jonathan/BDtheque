@@ -18,15 +18,15 @@ class CreateBdTable extends Migration
             $table->string('title_bd');
             $table->string('tom_bd');
             $table->integer('favorite_bd');
-            $table->unsignedInteger('id_category');
-            $table->unsignedInteger('id_editor');
+            $table->unsignedInteger('fk_category');
+            $table->unsignedInteger('fk_editor');
             $table->timestamps();
 
-            $table->foreign('id_category')
+            $table->foreign('fk_category')
                ->references('id_category')->on('category')
                ->onDelete('cascade');
 
-            $table->foreign('id_editor')
+            $table->foreign('fk_editor')
                 ->references('id_editor')->on('editor')
                 ->onDelete('cascade');
         });

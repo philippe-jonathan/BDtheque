@@ -14,11 +14,16 @@ class CreateUserBdTable extends Migration
     public function up()
     {
         Schema::create('user_bd', function (Blueprint $table) {
-            $table->unsignedInteger('id_bd');
+            $table->unsignedInteger('fk_bd');
+            $table->unsignedInteger('fk_user');
             $table->timestamps();
 
-            $table->foreign('id_bd')
+            $table->foreign('fk_bd')
                 ->references('id_bd')->on('bd')
+                ->onDelete('cascade');
+            
+            $table->foreign('fk_user')
+                ->references('id_user')->on('user')
                 ->onDelete('cascade');
         });
     }

@@ -16,10 +16,10 @@ class CreatePictureTable extends Migration
         Schema::create('picture', function (Blueprint $table) {
             $table->increments('id_picture');
             $table->string('src_img_picture');
-            $table->unsignedInteger('id_bd');
+            $table->unsignedInteger('fk_bd');
             $table->timestamps();
 
-            $table->foreign('id_bd')
+            $table->foreign('fk_bd')
                 ->references('id_bd')->on('bd')
                 ->onDelete('cascade');
         });

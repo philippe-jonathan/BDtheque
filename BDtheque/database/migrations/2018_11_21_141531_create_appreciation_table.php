@@ -17,10 +17,10 @@ class CreateAppreciationTable extends Migration
             $table->increments('id_appreciation');
             $table->string('comment_appreciation');
             $table->unsignedInteger('score_appreciation');
-            $table->unsignedInteger('id_bd');
+            $table->unsignedInteger('fk_bd');
             $table->timestamps();
 
-            $table->foreign('id_bd')
+            $table->foreign('fk_bd')
                 ->references('id_bd')->on('bd')
                 ->onDelete('cascade');
         });
