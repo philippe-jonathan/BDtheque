@@ -16,8 +16,9 @@ class CreateBdTable extends Migration
         Schema::create('bd', function (Blueprint $table) {
             $table->increments('id_bd');
             $table->string('title_bd');
+            $table->string('subtitle_bd');
             $table->string('tom_bd');
-            $table->integer('favorite_bd');
+            $table->integer('favorite_bd')->nullable();
             $table->unsignedInteger('fk_category');
             $table->unsignedInteger('fk_editor');
             $table->timestamps();
