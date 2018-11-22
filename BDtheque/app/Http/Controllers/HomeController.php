@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
+// use DB;
 use App\Models\Home;
+use App\Models\Picture;
 
 class HomeController extends Controller
 {
@@ -16,6 +17,8 @@ class HomeController extends Controller
     public function index() 
     {
         $bd = Home::all();
-        return view('Home', compact('bd'));
+        $bd2 = Picture::all();
+        return view('Home', compact('bd'), compact('bd2'));
     }
+    
 }
