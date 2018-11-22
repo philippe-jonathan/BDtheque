@@ -10,9 +10,8 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <!-- Navbar content -->
-        <button type="button" class="btn btn-dark">Consulter</button>
-        <button type="button" class="btn btn-dark">Découvrir</button>
-        <button type="button" class="btn btn-dark">Découvrir</button>
+        <a href="/home" type="button" class="btn btn-dark">Consulter</a>
+        <a href="/decouvrir" type="button" class="btn btn-dark">Découvrir</a>
 
         @foreach($bd2 as $bd2)
             <div><img src="{{$bd2->src_img_picture}}" alt=""></div>
