@@ -6,6 +6,7 @@
     <title>info Titeuf</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="{{ asset('/css/style.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -33,7 +34,7 @@
     </nav>
 
     @foreach($title as $title)
-        <div><img src="{{$title->picture_bd}}"></div>
+        <div><img class="img2" src="{{$title->picture_bd}}"></div>
     @endforeach
 
 

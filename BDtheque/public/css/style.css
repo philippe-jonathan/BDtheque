@@ -1,0 +1,29 @@
+.img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.img2 {
+    display: block;
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.table {
+    text-align: center;
+}
+.collection{
+    display : flex !important;
+    flex-direction: column;
+    align-items: center !important;
+}
+.collection_child{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

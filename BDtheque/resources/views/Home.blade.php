@@ -6,6 +6,7 @@
     <title>BD Thèque</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="{{ asset('/css/style.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -33,16 +34,12 @@
     </nav>
 
     @foreach($bd as $bd)
-        <table>
+        <table class="table">
             <tr>
-                <th>bd</th>
-                <th>image</th>
-            </tr>
-            <tr>
-                <td>{{$bd->id_bd}}
-                {{$bd->title_bd}}
-                {{$bd->subtitle_bd}}</td>
-                <td><img src="{{$bd->picture_bd}}" alt=""></td>
+                <td>
+                {{$bd->title_bd}}, 
+                {{$bd->subtitle_bd}}
+               <img class="img1" src="{{$bd->picture_bd}}" alt=""></td>
             </tr>
         </table>
         
