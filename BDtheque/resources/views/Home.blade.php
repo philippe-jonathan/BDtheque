@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+
     <nav class="navbar navbar-dark bg-dark">
         <!-- Navbar content -->
-        <a href="/home" type="button" class="btn btn-dark">Consulter</a>
+        <a href="/" type="button" class="btn btn-dark">Consulter</a>
         <a href="/decouvrir" type="button" class="btn btn-dark">Découvrir</a>
 
         @foreach($bd2 as $bd2)
@@ -22,8 +23,8 @@
                 Mes bd
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Toutes mes bd</a>
-                <a class="dropdown-item" href="#">toutes mes collections</a>
+                <a class="dropdown-item" href="/mesBd">Toutes mes bd</a>
+                <a class="dropdown-item" href="/collection">toutes mes collections</a>
             </div>
         </div>
 

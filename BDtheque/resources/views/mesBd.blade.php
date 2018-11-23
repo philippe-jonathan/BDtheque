@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Découvrir</title>
+    <title>Mes bd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+
     <nav class="navbar navbar-dark bg-dark">
         <!-- Navbar content -->
         <a href="/" type="button" class="btn btn-dark">Consulter</a>
@@ -32,9 +33,9 @@
     </nav>
 
     <div>
-        Découvrir
+        mes Bd
     </div>
-    
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

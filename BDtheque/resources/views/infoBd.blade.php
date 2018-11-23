@@ -3,18 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Découvrir</title>
+    <title>info Titeuf</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+
     <nav class="navbar navbar-dark bg-dark">
         <!-- Navbar content -->
         <a href="/" type="button" class="btn btn-dark">Consulter</a>
         <a href="/decouvrir" type="button" class="btn btn-dark">Découvrir</a>
 
         @foreach($bd2 as $bd2)
-            <div><img src="{{$bd2->src_img_picture}}" alt=""></div>
+            <div><img src="{{$bd2->src_img_picture}}"></div>
         @endforeach
         
         <div class="dropdown">
@@ -31,10 +32,11 @@
         <button type="button" class="btn btn-dark">Mes avis</button>
     </nav>
 
-    <div>
-        Découvrir
-    </div>
-    
+    @foreach($title as $title)
+        <div><img src="{{$title->picture_bd}}"></div>
+    @endforeach
+
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

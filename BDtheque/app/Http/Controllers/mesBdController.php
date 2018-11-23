@@ -6,23 +6,16 @@ use Illuminate\Http\Request;
 use App\Models\Home;
 use App\Models\Picture;
 
-class HomeController extends Controller
+class mesBdController extends Controller
 {
-    public function show ()
-    {
-        return view('Home');
-    }
-
-    public function index() 
+    public function show()
     {
         $bd = Home::all();
         $bd2 = Picture::all();
-        return view('Home', 
+        return view('mesBd', 
         [
             'bd' => $bd,
             'bd2' => $bd2
         ]);
     }
-    
-  
 }

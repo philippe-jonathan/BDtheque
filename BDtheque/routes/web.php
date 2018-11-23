@@ -11,5 +11,11 @@
 |
 */
 
-Route::get('/home', 'HomeController@index');
+Route::get('/', 'HomeController@index');
+
 Route::get('/decouvrir', 'decouvrirController@show');
+Route::get('/mesBd', 'mesBdController@show');
+
+Route::get('/collection', 'collectionController@tom');
+
+Route::get('/infoBd', 'collectionController@showCollection');
